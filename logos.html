@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Logo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Playfair+Display:wght@700&family=Cinzel:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+    <!-- Inline styles for quick preview if css not fully built -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#D4AF37',
+                        dark: '#0B0D17',
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        cinzel: ['Cinzel', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-dark text-white min-h-screen flex flex-col items-center justify-center p-8">
+    <h1 class="text-4xl text-primary mb-12 font-sans">Choose Your Agency Identity</h1>
+
+    <div class="grid md:grid-cols-3 gap-12 w-full max-w-6xl">
+        <!-- Variant 1 -->
+        <div
+            class="border border-white/10 p-12 rounded-xl hover:border-primary transition cursor-pointer flex flex-col items-center text-center group">
+            <h2 class="text-gray-500 mb-8">Option 1: Modern Luxury</h2>
+            <div class="bg-dark-lighter p-8 rounded mb-6 w-full flex justify-center border border-white/5">
+                <div class="text-4xl font-serif font-bold tracking-wide">
+                    AURUM <span class="text-primary italic">Strategy</span>
+                </div>
+            </div>
+            <p class="text-sm text-gray-400">Uses 'Playfair Display' for a sophisticated, high-end fashion/consulting
+                feel.</p>
+        </div>
+
+        <!-- Variant 2 -->
+        <div
+            class="border border-white/10 p-12 rounded-xl hover:border-primary transition cursor-pointer flex flex-col items-center text-center group">
+            <h2 class="text-gray-500 mb-8">Option 2: Corporate Power</h2>
+            <div class="bg-dark-lighter p-8 rounded mb-6 w-full flex justify-center border border-white/5">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 border-2 border-primary rotate-45 flex items-center justify-center mr-4">
+                        <span class="text-primary -rotate-45 font-bold text-xl">A</span>
+                    </div>
+                    <div class="text-3xl font-sans font-bold tracking-widest uppercase">
+                        Aurum<span class="text-primary">Apex</span>
+                    </div>
+                </div>
+            </div>
+            <p class="text-sm text-gray-400">Geometric icon with strong 'Outfit' wide tracking. Symbolizes stability and
+                growth.</p>
+        </div>
+
+        <!-- Variant 3 -->
+        <div
+            class="border border-white/10 p-12 rounded-xl hover:border-primary transition cursor-pointer flex flex-col items-center text-center group">
+            <h2 class="text-gray-500 mb-8">Option 3: Heritage & Legacy</h2>
+            <div class="bg-dark-lighter p-8 rounded mb-6 w-full flex justify-center border border-white/5">
+                <div class="text-center">
+                    <div class="text-5xl font-cinzel text-primary mb-1">🏛</div>
+                    <div class="text-3xl font-cinzel text-white">EMIRATES <span class="text-primary">ELITE</span></div>
+                    <div class="text-[0.6rem] tracking-[0.3em] text-gray-400 mt-1">BUSINESS CONSULTANCY</div>
+                </div>
+            </div>
+            <p class="text-sm text-gray-400">Uses 'Cinzel' for a classic, institutional authority look. Good for
+                government/legal relations.</p>
+        </div>
+    </div>
+</body>
+
+</html>

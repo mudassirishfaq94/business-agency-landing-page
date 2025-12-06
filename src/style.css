@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #D4AF37;
+  --color-primary-hover: #C5A028;
+  --color-dark: #0B0D17;
+  --color-dark-lighter: #1A1D2B;
+  --color-light: #F4F4F4;
+  --font-sans: "Outfit", sans-serif;
+  --font-serif: "Playfair Display", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-primary text-dark font-bold rounded hover:bg-primary-hover transition-colors duration-300;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}

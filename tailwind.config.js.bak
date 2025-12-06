@@ -1,0 +1,26 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+    content: [
+        "./index.html",
+        "./src/**/*.{js,ts,jsx,tsx}",
+    ],
+    theme: {
+        extend: {
+            colors: {
+                primary: {
+                    DEFAULT: '#D4AF37', // Gold
+                    hover: '#C5A028',
+                },
+                dark: {
+                    DEFAULT: '#0B0D17', // Deep Navy
+                    lighter: '#1A1D2B',
+                },
+                light: '#F4F4F4',
+            },
+            fontFamily: {
+                sans: ['Outfit', 'sans-serif'],
+            },
+        },
+    },
+    plugins: [],
+}
